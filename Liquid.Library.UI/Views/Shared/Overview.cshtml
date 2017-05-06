@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-content">
+    <div class="product-info-wrapper">
+        <div class="col">
+            <div class="product-info" ng-controller="bookView" ng-cloak>
+                <div class="product-info-heading">{{model.Name}}</div>
+                <div class="product-info-content">
+                    <div class="form-group">
+                        <span class="form-control-label">Name:</span>
+                        <span class="form-control">{{model.Name}}</span>
+                    </div>
+                    <div class="form-group">
+                        <span class="form-control-label">Author:</span>
+                        <span class="form-control">{{model.Author}}</span>
+                    </div>
+                    <div class="form-group">
+                        <span class="form-control-label">ISBN:</span>
+                        <span class="form-control">{{model.ISBN}}</span>
+                    </div>
+                </div>
+                <div class="product-info-footer">
+                    <p>
+                        <a href="/Book/CreateNew">Create New</a>
+                        <span class="separator">|</span>
+                        <a href="/Book/Update?id={{model.Id}}">Update</a>
+                        <span class="separator">|</span>
+                        <a href="/Book/Delete?id={{model.Id}}">Delete</a>
+                    </p>
+                    @Html.ActionLink("Back to List", "Index")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

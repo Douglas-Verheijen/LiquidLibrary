@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liquid.Library.UI", "Liquid.Library.UI\Liquid.Library.UI.csproj", "{DDB12084-CABB-4EE8-B4F8-84711D207A15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liquid.Library.Core", "Liquid.Library.Core\Liquid.Library.Core.csproj", "{331CF639-4826-4174-AF4B-0136CDD25827}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDB12084-CABB-4EE8-B4F8-84711D207A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB12084-CABB-4EE8-B4F8-84711D207A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB12084-CABB-4EE8-B4F8-84711D207A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB12084-CABB-4EE8-B4F8-84711D207A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{331CF639-4826-4174-AF4B-0136CDD25827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331CF639-4826-4174-AF4B-0136CDD25827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331CF639-4826-4174-AF4B-0136CDD25827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331CF639-4826-4174-AF4B-0136CDD25827}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

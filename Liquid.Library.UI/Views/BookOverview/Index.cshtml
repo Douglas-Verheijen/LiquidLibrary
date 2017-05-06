@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Book";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-content">
+    <div class="page-info-wrapper">
+        <div class="page-info" ng-controller="book" ng-cloak>
+            <div class="page-info-heading">Book</div>
+            <div class="page-info-wrapper-content">
+                <div class="listing">
+                    <div class="listing-content" ng-repeat="model in currentItems">
+                        <div class="listing-content-item">
+                            <a href="/Book/Overview?id={{model.Id}}">{{model.Name}}</a>
+                        </div>
+                    </div>
+                    <div class="listing-controls">
+                        <label ng-click="setFirstPage();"><<</label>
+                        <label ng-click="decreaseCurrentPage();"><</label>
+                        <label>{{currentPage * pageSize + 1}} - {{(currentPage * pageSize + pageSize) < pageTotal ? currentPage * pageSize + pageSize : pageTotal}} of {{pageTotal}}</label>        
+                        <label ng-click="increaseCurrentPage();">></label>
+                        <label ng-click="setLastPage();">>></label>
+                    </div>
+                </div>
+                <div class="page-info-actions">
+                    @Html.ActionLink("Create New", "CreateNew")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - LiquidLibrary</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/ui-bootstrap")
+    @Scripts.Render("~/bundles/app")
+</head>
+<body ng-app="liquidApp">
+    <div class="page-container">
+        <div class="page-header-wrapper">
+            <div class="page-header">
+            </div>
+        </div>
+
+        <div class="page-content-wrapper">
+            @RenderBody()
+        </div>
+
+        <div class="page-footer-wrapper">
+            <div class="page-footer">
+                <span class="separator"></span>
+                &copy; @DateTime.Now.Year Douglas Verheijen Technologies Inc.
+                <span class="separator"></span>
+            </div>
+        </div>
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+    </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+﻿@{
+    ViewBag.Title = "Library of Verheijen";
+}
+
+<div class="page-content">
+    <div class="page-info-wrapper">
+        <div class="page-info">
+            <div class="page-info-heading">Library of Verheijen</div>
+            <table class="home-menu">
+                <tr style="height:100px;">
+                    <td valign="middle">
+                        <a href="@Url.Action("Index", "Book")">
+                            <div class="home-menu-item">
+                                <p>Books</p>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="middle">
+                        <a href="@Url.Action("Index", "Movie")">
+                            <div class="home-menu-item">
+                                <p>Movie</p>
+                            </div>
+                        </a>
+                    </td>
+                </tr>
+
+                    @*var topics = new[]
+                    {
+                            new { EntityName = "Book", DisplayName = "Books" },
+                            new { EntityName = "Game", DisplayName = "Games" },
+                            new { EntityName = "Movie", DisplayName = "Movies" },
+                            new { EntityName = "Music", DisplayName = "Music" }
+                        };
+
+                    foreach (var topic in topics)
+                    {
+                        <tr style="height:100px;">
+                            <td valign="middle">
+                                <a href="@Url.Action("Index", @topic.EntityName)">
+                                    <div class="home-menu-item">
+                                        <p>@topic.DisplayName</p>
+                                    </div>
+                                </a>
+                            </td>
+                        </tr>
+                    }*@
+            </table>
+        </div>
+    </div>
+</div>
